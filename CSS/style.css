@@ -1,0 +1,82 @@
+.front-text h1, p {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.front-text h1 {
+font-size: 100px;
+font-family: 'Antic Didone', serif;
+font-weight: 100;
+}
+
+body {
+    margin: none;
+    background-image: url(/img/universetbg.svg);
+    background-repeat: no-repeat;
+    
+}
+
+header {
+    display: flex;
+    
+    width: 90%;
+    margin: auto;
+}
+
+.logo-container {
+    
+    flex: 2;
+}
+
+img{
+    width: 70px;
+    height: auto;
+}
+.logo-container{
+    padding: 10px 0px 0px 170px;
+
+}
+nav {
+    
+    flex: 1;
+    color: white;
+    display: flex;
+}
+
+.nav-link {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.space {
+    height: 600px;
+}
+
+.planet1 img {
+    position: absolute;
+    right: 200px;
+    width: 150px;
+    height: auto;
+}
+
+.planet2 img {
+position: relative;
+top: 200px;
+left: 600px;
+width: 200px;
+
+}
+
+.planet3 img {
+    width: 150px;
+    position: absolute;
+    left: 200px;
+}
