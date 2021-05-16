@@ -34,7 +34,7 @@ header {
 }
 
 .logo-container {
-    
+    padding: 20px 0px 0px 170px;
     flex: 2;
 }
 
@@ -42,10 +42,7 @@ img{
     width: 70px;
     height: auto;
 }
-.logo-container{
-    padding: 20px 0px 0px 170px;
 
-}
 nav li {
     flex: 1;
     color: white;
