@@ -14,7 +14,7 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a class="nav-link" href="#">HOME</a></li>
+                <li><a class="nav-link" href="/index.html">HOME</a></li>
                 <li><a class="nav-link" href="#">ABOUT</a></li>
                 <li><a class="nav-link" href="./HTML/contact.html">CONTACT</a></li>
             </ul>
@@ -24,8 +24,37 @@
         <div class="contact-pic"><img src="/img/contactplanet.png" alt=""></div>
         <div class="contact-forum">
             <div class="contact-info">
-                <h1>Contact us!</h1>
-                <h2>We want to help.</h2>
+                <form id="signup">
+                    <div class="headline">
+                      <h1>Contact</h1>
+                      </div>
+                        <p id="message"></p>
+                        <div>
+                          <label for="name">Name: </label>
+                          <input type="text" id="name" name="name">
+                          <span id="nameMsg"></span>
+                        </div>
+                        <div>
+                            <label for="subject">Subject: </label>
+                            <input type="text" id="subject" name="subject">
+                            <span id="subjectMsg"></span>
+                        </div>
+                        <div>
+                          <label for="email">Email: </label>
+                          <input type="text" id="email" name="email">
+                          <span id="emailMsg"></span>
+                        </div>
+                        <div>  
+                          <label for="address">Address: </label>
+                          <input type="text" id="address" name="address">
+                          <span id="addressMsg"></span>
+                        </div>
+                        <div>  
+                        <input type="submit" value="Submit">
+                        </div>
+                      </form>
+                </body>
+                <script src="/contact.js"></script>
             </div>
         </div>
     </div>
