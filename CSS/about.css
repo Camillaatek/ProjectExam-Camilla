@@ -1,0 +1,75 @@
+body {
+    background-image: linear-gradient(to right, #00FFFF , #0071BC );
+}
+
+header {
+    display: flex;
+    
+    width: 90%;
+    margin: auto;
+}
+
+.logo-container {
+    padding: 20px 0px 0px 170px;
+    flex: 2;
+}
+
+img{
+    width: 70px;
+    height: auto;
+}
+
+nav li {
+    flex: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.nav-link {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1, p {
+    color: white;
+}
+
+.about-site {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 600px;
+}
+
+.about-fact {
+margin: 30px;
+padding: 60px;
+font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.moon img {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    right: 0%;
+    margin: 50px;
+    padding-right: 60px;
+}
+
+.himmel img {
+    width: fit-content;
+    height: auto;
+    position: absolute;
+    right: -1%;
+
+}
