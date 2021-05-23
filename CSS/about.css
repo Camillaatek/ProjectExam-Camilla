@@ -7,9 +7,6 @@ header {
     display: flex;
     width: 90%;
     margin: auto;
-    background-image: linear-gradient(
-180deg
-,rgba(13,0,32,.5) -40px,rgba(53,0,58,0) 200px);
 }
 
 .logo-container {
