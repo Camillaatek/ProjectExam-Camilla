@@ -64,30 +64,32 @@
 
 
 
-
-    const url = "https://camillaatek.no/wp-json/wp/v2/posts?_embed=true";
-    const blog = document.querySelector(".blog")
-
-    const postList = (posts) => {
-        console.log(posts)
-        blog.innerHTML = "";
-        for(post of posts){
-            console.log(post)
-            let images = post._embedded["wp:featuredmedia"]
-            console.log(images)
-            for (image of post._embedded["wp:featuredmedia"]){
-            postDiv = `
-           <div>
-            <a href="details.html?id=${post.id}"><h1>${post.title.rendered}</h1></a>
-            <a href="details.html?id=${post.id}"><img src="${image.source_url}" alt="hei"</a>
+    const api = "https://camillaatek.no/wp-json/wp/v2/posts?_embed=true";
+    const posts = document.querySelector(".blog");
+    
+   
+    const universe = (blogs) => {
+         console.log(blogs);
+         
+         let postDiv = ``
+         for (blog of blogs) {
+             
+             let images = blog._embedded["wp:featuredmedia"]
+             console.log(images);
+             for (image of blog._embedded["wp:featuredmedia"]){
+             postDiv = `  
+             <div>
+             <a href="HTML/details.html?id=${blog.id}"><img src="${image.source_url}" alt="bilde"></a>
+             <a href="HTML/details.html?id=${blog.id}"><h2>${blog.title.rendered}</h2></a>
             </div>
             `;
-            blog.innerHTML += postDiv
+            posts.innerHTML += postDiv;
             }
-    
         }
-    }
-    fetch(url)
-     .then(response => response.json())
-    .then(data => postList(data))
-    .catch(error => blog.innerHTML = "Something went wrong");
+    }  
+     
+    fetch(api)
+         .then(response => response.json())
+         .then(data => universe(data))
+         .catch(error => console.error(error))
+    
