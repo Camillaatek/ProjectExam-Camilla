@@ -1,0 +1,41 @@
+body {
+    background: aqua;
+}
+
+header {
+    display: flex;
+    
+    width: 90%;
+    margin: auto;
+}
+
+.logo-container {
+    padding: 20px 0px 0px 170px;
+    flex: 2;
+}
+
+img{
+    width: 70px;
+    height: auto;
+}
+
+nav li {
+    flex: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.nav-link {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 0, 242);
+    align-items: center;
+    
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
