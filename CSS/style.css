@@ -134,3 +134,19 @@ margin: none;
 .slides a {
     text-decoration: none;
 }
+
+
+
+
+footer {
+    height: 50px;
+    background-color: aqua;
+    width: 100%;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    
+    
+}

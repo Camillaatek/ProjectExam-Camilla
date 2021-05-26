@@ -45,7 +45,7 @@ posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 
 nextButton.addEventListener('click',()=>{
-    if(counter >= 4){
+    if(counter >= 2){
         counter= -1
         posts.style.transform = 'translateX(0px)';
     }
