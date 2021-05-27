@@ -39,7 +39,7 @@ header {
 }
 
 .logo-container {
-    padding: 20px 0px 0px 170px;
+    padding: 20px 0px 0px 35px;
     flex: 2;
 }
 
@@ -135,7 +135,22 @@ margin: none;
     text-decoration: none;
 }
 
-
+#prevButton, #nextButton {
+    display: flex;
+    justify-content: center;
+    
+    border: none;
+    text-decoration: none;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 100px;
+    background-image: linear-gradient(120deg, #ff34c6 0%, #3268c5 100%);
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+}
 
 
 footer {

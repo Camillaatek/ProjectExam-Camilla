@@ -12,7 +12,7 @@ header {
 }
 
 .logo-container {
-    padding: 20px 0px 0px 170px;
+    padding: 20px 0px 0px 35px;
     flex: 2;
 }
 
@@ -44,19 +44,29 @@ nav li {
 
 .allcontainer {
     height: 600px;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .allheadline {
     position: relative;
-    left: 300px;
+    left: 100px;
     top: 100px;
     font-size: 40px;
 }
 
+.allheadline p {
+    font-size: 25px;
+    margin: 80px 50px 0px 0px;
+}
+
+.allblogspic img {
+    width: 700px;
+    margin-top: 70px;
+}
 
 .postscontainer {
-    margin: 0px 300px 0px 300px;
+    margin: 100px 50px 0px 50px;
 }
 
 .blog {
@@ -109,3 +119,53 @@ nav li {
   }
   
   
+  @media (max-width: 400px){
+     
+      
+    .allblogspic img {
+        display: none;
+    }
+    
+    .allheadline {
+        font-size: 20px;
+        position:static;
+      
+    }
+    
+    .allcontainer {
+      
+    }
+    .allcontainer h1, p{
+        position: relative;
+        
+        font-size: 50px;
+        margin: 10px;
+        width: 300px;
+
+    }
+
+    .blog {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+
+    }
+  }
+
+  @media (max-width: 768px){
+
+      .allheadline{
+       font-size: 15px;
+      }
+
+      .allblogspic img{
+          width:500px;
+      }
+      img {
+          width: 50px;
+
+      }
+      .nav-link {
+          font-size: 10px;
+      }
+  }
