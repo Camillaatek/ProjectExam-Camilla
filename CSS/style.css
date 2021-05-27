@@ -165,3 +165,21 @@ footer {
     
     
 }
+
+@media (max-width: 400px) {
+    .front-text h1 {
+        font-size: 50px;
+        position: relative;
+        top: 10px;
+       
+    }
+
+    .front-text p {
+        font-size: 13px;
+        position: relative;
+        top: 10px;
+    }
+    .planet2{
+        display: none;
+    }
+}
