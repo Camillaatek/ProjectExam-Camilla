@@ -45,10 +45,22 @@ posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 
 nextButton.addEventListener('click',()=>{
-    if(counter >= 2){
+    if(carouselContainer.clientWidth === 1360 && counter >= 2){
         counter= -1
         posts.style.transform = 'translateX(0px)';
     }
+    // else if(carouselContainer.clientWidth === 1306 && counter >= 2){
+    //     counter= -1
+    //     posts.style.transform = 'translateX(0px)';
+    // }
+    // else if(carouselContainer.clientWidth === 1306 && counter >= 2){
+    //     counter= -1
+    //     posts.style.transform = 'translateX(0px)';
+    // }
+    // else if(carouselContainer.clientWidth === 1306 && counter >= 2){
+    //     counter= -1
+    //     posts.style.transform = 'translateX(0px)';
+    // }
     posts.style.transition = "transform 0.4s ease-in-out";
     counter++;
     posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
