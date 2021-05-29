@@ -101,7 +101,7 @@ nav li {
     width: 280px;
     height: 350px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    
+    margin: 20px;
 }
 
 .loadingButton {
@@ -126,6 +126,7 @@ footer {
     background-color: aqua;
     width: 100%;
 }
+
 
 @media (max-width: 1024px) {
     .allblogspic img {

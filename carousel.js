@@ -57,7 +57,7 @@ nextButton.addEventListener('click',()=>{
         counter= -1
         posts.style.transform = 'translateX(0px)';
     }
-    else if(carouselContainer.clientWidth === 320 && counter >= 11){
+    else if(carouselContainer.clientWidth === 325 && counter >= 11){
         counter= -1
         posts.style.transform = 'translateX(0px)';
     }
@@ -79,7 +79,7 @@ prevButton.addEventListener('click',()=>{
         counter= 6
         posts.style.transform = 'translateX(0px)';
     }
-    else if(carouselContainer.clientWidth === 320 && counter <= 0){
+    else if(carouselContainer.clientWidth === 325 && counter <= 0){
         counter= 12
         posts.style.transform = 'translateX(0px)';
     }
@@ -89,6 +89,7 @@ prevButton.addEventListener('click',()=>{
     console.log(counter)
 
 })
+
 
 
 
