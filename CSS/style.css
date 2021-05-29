@@ -153,7 +153,7 @@ margin: none;
     margin: auto;
     margin-bottom: 100px;
     border-color: linear-gradient(120deg, #ff34c6 0%, #3268c5 100%);
-    border-size: 50px;
+    
     background-color: rgb(240, 240, 240);
     border-radius: 100px;
     font-size: 20px;
@@ -168,7 +168,11 @@ margin: none;
 .buttoncontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 40%;
+    margin: auto;
+   
 }
+
 footer {
     height: 50px;
     background-color: aqua;
@@ -281,11 +285,11 @@ footer {
         background-color: #101010;
         background-color: white;
     }
-    /* .nav-links {
+    .nav-links {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    } */
+    }
     
     .nav-link {
         /* margin-left: 5rem; */
@@ -304,18 +308,18 @@ footer {
     }
     
     .nav-links {
-        position: fixed;
+        position: absolute;
         left: -100%;
         top: 6rem;
+        
         flex-direction: column;
         background-color: #fff;
         width: 100%;
-        /* border-radius: 10px; */
+        border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-        0 10px 27px rgba(0, 0, 0, 0.05);
-        height: 8vh;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 50vh;
         margin: 0;
         padding: 0;
     }
@@ -323,8 +327,7 @@ footer {
 
     .nav-links.active {
         left: 0;
-        position: absolute;
-        padding: 0;
+        
     }
 
     .nav-link {
@@ -362,6 +365,11 @@ footer {
     .planet2 img {
         display: none;
     }
+
+    .buttoncontainer {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 425px) {
@@ -391,14 +399,16 @@ footer {
     .space {
         height: 100px;
     }
+    .buttoncontainer {
+        width: 60%;
+        margin: auto;
+    }
 }
 @media (max-width: 375px) {
     img {
         width: 40px;
     }
-    .bar {
-      
-    }
+    
 
     .space {
         height: 50px;
@@ -406,6 +416,10 @@ footer {
 
     .webcontainer {
         margin: 30px;
+    }
+    .buttoncontainer {
+        width: 70%;
+        margin: auto;
     }
 }
 @media (max-width: 320px) {
@@ -452,5 +466,13 @@ footer {
 
     .space {
         height: 30px;
+    }
+    .buttoncontainer {
+        width: 60%;
+        margin: auto;
+    }
+    .buttoncontainer {
+        width: 80%;
+        margin: auto;
     }
 }
