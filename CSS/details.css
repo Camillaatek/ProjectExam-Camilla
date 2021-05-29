@@ -46,3 +46,8 @@ nav li {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 20px;
 }
+
+.blog {
+    max-width: 600px;
+    margin: 0 auto;
+}

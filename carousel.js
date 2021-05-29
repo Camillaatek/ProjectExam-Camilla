@@ -49,28 +49,39 @@ nextButton.addEventListener('click',()=>{
         counter= -1
         posts.style.transform = 'translateX(0px)';
     }
-    // else if(carouselContainer.clientWidth === 1306 && counter >= 2){
-    //     counter= -1
-    //     posts.style.transform = 'translateX(0px)';
-    // }
-    // else if(carouselContainer.clientWidth === 1306 && counter >= 2){
-    //     counter= -1
-    //     posts.style.transform = 'translateX(0px)';
-    // }
-    // else if(carouselContainer.clientWidth === 1306 && counter >= 2){
-    //     counter= -1
-    //     posts.style.transform = 'translateX(0px)';
-    // }
-    posts.style.transition = "transform 0.4s ease-in-out";
+    else if(carouselContainer.clientWidth === 960 && counter >= 3){
+        counter= -1
+        posts.style.transform = 'translateX(0px)';
+    }
+    else if(carouselContainer.clientWidth === 640 && counter >= 5){
+        counter= -1
+        posts.style.transform = 'translateX(0px)';
+    }
+    else if(carouselContainer.clientWidth === 320 && counter >= 11){
+        counter= -1
+        posts.style.transform = 'translateX(0px)';
+    }
+    posts.style.transition = "transform 0.3s ease-in-out";
     counter++;
     posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
     console.log(counter)
 });
 prevButton.addEventListener('click',()=>{
-    if(counter <= 0){
+    if(carouselContainer.clientWidth === 1360 && counter <= 0){
         counter= 3
         posts.style.transform = 'translateX(0px)';
-        console.log(counter)
+    }
+    else if(carouselContainer.clientWidth === 960 && counter <= 0){
+        counter= 4
+        posts.style.transform = 'translateX(0px)';
+    }
+    else if(carouselContainer.clientWidth === 640 && counter <= 0){
+        counter= 6
+        posts.style.transform = 'translateX(0px)';
+    }
+    else if(carouselContainer.clientWidth === 320 && counter <= 0){
+        counter= 12
+        posts.style.transform = 'translateX(0px)';
     }
     posts.style.transition = "transform 0.4s ease-in-out";
     counter--;
