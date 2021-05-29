@@ -147,18 +147,28 @@ margin: none;
     
     border: none;
     text-decoration: none;
-    width: 200px;
+    width: 100px;
+    height: auto;
     padding: 10px;
     margin: auto;
     margin-bottom: 100px;
-    background-image: linear-gradient(120deg, #ff34c6 0%, #3268c5 100%);
-    color: white;
-    border-radius: 12px;
+    border-color: linear-gradient(120deg, #ff34c6 0%, #3268c5 100%);
+    border-size: 50px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 100px;
     font-size: 20px;
     font-weight: 500;
+    
 }
 
+#prevButton img, #nextButton img {
+    width: 20px;
+}
 
+.buttoncontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 footer {
     height: 50px;
     background-color: aqua;
@@ -227,6 +237,7 @@ footer {
     
     .hamburger {
         display: none;
+        
     }
     
     .bar {
@@ -237,6 +248,7 @@ footer {
         /* -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; */
         background-color: #101010;
+        background-color: white;
     }
     /* .nav-links {
         display: flex;
@@ -296,7 +308,7 @@ footer {
     
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
-        background-color: white;
+        
     }
 
     .hamburger.active .bar:nth-child(1) {
@@ -321,5 +333,38 @@ footer {
 @media (max-width: 425px) {
     .carouselContainer {
         width: 320px;
+    }
+}
+
+@media (max-width: 320px) {
+    .planet3 img {
+        width: 50px;
+    }
+    /* .carouselContainer {
+        width: 90px;
+    } */
+    img {
+        width: 40px;
+    }
+    .front-text h1 {
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: 10px;
+    }
+    .front-text p {
+        font-size: 10px;
+        
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: 10px;
+    }
+    .webcontainer {
+        width: 300px;
+        margin: 0;
+    }
+
+    .space {
+        height: 200px;
     }
 }

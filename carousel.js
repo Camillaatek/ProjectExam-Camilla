@@ -61,6 +61,10 @@ nextButton.addEventListener('click',()=>{
         counter= -1
         posts.style.transform = 'translateX(0px)';
     }
+    else if(carouselContainer.clientWidth === 300 && counter >= 11){
+        counter= -1
+        posts.style.transform = 'translateX(0px)';
+    }
     posts.style.transition = "transform 0.3s ease-in-out";
     counter++;
     posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -83,6 +87,7 @@ prevButton.addEventListener('click',()=>{
         counter= 12
         posts.style.transform = 'translateX(0px)';
     }
+    
     posts.style.transition = "transform 0.4s ease-in-out";
     counter--;
     posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
