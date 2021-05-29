@@ -296,6 +296,7 @@ footer {
     
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
+        background-color: white;
     }
 
     .hamburger.active .bar:nth-child(1) {
@@ -319,6 +320,6 @@ footer {
 
 @media (max-width: 425px) {
     .carouselContainer {
-        width: 325px;
+        width: 320px;
     }
 }
