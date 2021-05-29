@@ -86,8 +86,8 @@ top: 90px;
 }
 
 .planet2 img {
-position: relative;
-top: 200px;
+position: absolute;
+top: 400px;
 left: 600px;
 width: 250px;
 margin: none;
@@ -216,6 +216,26 @@ footer {
 
 
 @media (max-width: 1024px) {
+
+    .planet1 img{
+        position: absolute;
+        right: 50px;
+  
+    }
+    .planet3 img{
+        position: absolute;
+        left: 50px;
+  
+    }
+
+
+    .planet2 img{
+        width: 130px;
+       
+  
+    }
+
+
     .carouselContainer{
         width: 960px;
     }
@@ -226,6 +246,17 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    .front-page h1 {
+        font-size: 80px;
+        position: relative;
+        top: 20px;
+    }
+    .front-page p {
+        font-size: 20px;
+        position: relative;
+        top: 20px;
+    }
     .menucontainer {
         display: flex;
         justify-content: space-between;
@@ -325,6 +356,9 @@ footer {
         width: 640px;
     }
 
+    .planet1 img {
+        width: 100px;
+    }
     .planet2 img {
         display: none;
     }
@@ -334,12 +368,64 @@ footer {
     .carouselContainer {
         width: 320px;
     }
+    .front-page h1 {
+        font-size: 50px;
+        position: relative;
+        top: 20px;
+    }
+    .front-page p {
+        font-size: 13px;
+        position: relative;
+        top: 20px;
+    }
+    .planet3 img {
+        position: relative;
+        top: 20px;
+        width: 60px;
+    }
+    .planet1 img {
+        position: absolute;
+        top: 60px;
+        width: 40px;
+    }
+    .space {
+        height: 100px;
+    }
 }
+@media (max-width: 375px) {
+    img {
+        width: 40px;
+    }
+    .bar {
+      
+    }
 
+    .space {
+        height: 50px;
+    }
+
+    .webcontainer {
+        margin: 30px;
+    }
+}
 @media (max-width: 320px) {
     .planet3 img {
-        width: 50px;
+       width: 40px;
+       position: relative;
+       top: 15px;
     }
+    .planet1 img {
+        width: 50px;
+        position: absolute;
+        top: 10px;
+        
+    }
+
+    
+    /* .planet2 {
+        display: none;
+    } */
+   
     /* .carouselContainer {
         width: 90px;
     } */
@@ -365,6 +451,6 @@ footer {
     }
 
     .space {
-        height: 200px;
+        height: 30px;
     }
 }
