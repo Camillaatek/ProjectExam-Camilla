@@ -37,7 +37,7 @@ nav li {
     text-decoration: none;
     color: rgb(0, 0, 0);
     align-items: center;
-    
+    font-family: 'Rubik', sans-serif;
 }
 
 .nav-links {
@@ -48,10 +48,11 @@ nav li {
 
 p {
     padding: 20px 0px 50px 0px;
+    font-family: 'Karla', sans-serif;
 }
 h1{
-    font-family: 'Spectral', serif;
-    
+    font-weight: 100;
+    font-family: 'Rubik', sans-serif;
     font-size: 60px;
 padding-top: 100px;
 background: -webkit-linear-gradient(120deg,#ff34c6, #3268c5);
@@ -90,6 +91,7 @@ footer {
     justify-content: center;
     color: white;
     font-size: 20px;
+    font-family: 'Rubik', sans-serif;
 }
 
 @media (max-width: 768px){
