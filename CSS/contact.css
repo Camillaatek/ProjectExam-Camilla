@@ -136,6 +136,19 @@ form div {
   display: flex;
   justify-content: center;
 }
+footer {
+    height: 50px;
+    background-image: linear-gradient(120deg, #ff34c6 0%, #3268c5 100%);
+    width: 100%;
+    
+}
+.footer-text {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
  
 @media (max-width: 768px){
     .menucontainer {

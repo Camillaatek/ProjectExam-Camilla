@@ -68,7 +68,7 @@
     const loadingButton = "https://camillaatek.no/wp-json/wp/v2/posts?_embed=true&per_page=2&offset=10";
     const posts = document.querySelector(".blog");
     const load = document.querySelector(".loadingButton")
-    
+    const spacegif = document.querySelector(".lasterinn")
    
     const universe = (blogs) => {
          console.log(blogs);
@@ -94,7 +94,7 @@
          .then(response => response.json())
          .then(data => universe(data))
          .catch(error => console.error(error))
-    
+         .finally(()=> spacegif.style.display="none")
 
 load.addEventListener("click", ()=> {
     fetch(loadingButton)

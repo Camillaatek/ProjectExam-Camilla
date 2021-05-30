@@ -117,12 +117,13 @@ const api = `https://camillaatek.no/wp-json/wp/v2/posts/${id}?_embed=true`;
 const posts = document.querySelector(".blog");
 const modal = document.querySelector(".modal")
 const body = document.querySelector("body")
+const spacegif = document.querySelector(".lasterinn")
 
  fetch(api)
      .then(response => response.json())
      .then(data => universe(data))
      .catch(error => console.error(error))
-     
+     .finally(()=> spacegif.style.display="none")
 
 const universe = (blog) => {
      console.log(blog);
@@ -132,7 +133,7 @@ const universe = (blog) => {
         postDiv = ` 
         <div class="info">
         <div class="top">
-        <h2>${blog.title.rendered}</h2>
+        <h1>${blog.title.rendered}</h1>
         <img onClick="funk()" class= "buildfunk" src="${image.source_url}" alt="image">
         </div>
         <p>${blog.content.rendered}</p>

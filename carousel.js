@@ -1,7 +1,7 @@
 const api = "https://camillaatek.no/wp-json/wp/v2/posts?_embed=true&per_page=100&per_page=100";
 const posts = document.querySelector(".blog");
 const carouselContainer = document.querySelector(".carouselContainer");
-
+const spacegif = document.querySelector(".lasterinn")
 
 
 const universe = (blogs) => {
@@ -28,7 +28,7 @@ fetch(api)
     .then(response => response.json())
     .then(data => universe(data))
     .catch(error => console.error(error))
-
+    .finally(()=> spacegif.style.display="none")
 
 
 
@@ -57,7 +57,7 @@ nextButton.addEventListener('click',()=>{
         counter= -1
         posts.style.transform = 'translateX(0px)';
     }
-    else if(carouselContainer.clientWidth === 320 && counter >= 11){
+    else if(carouselContainer.clientWidth === 330 && counter >= 11){
         counter= -1
         posts.style.transform = 'translateX(0px)';
     }
@@ -83,7 +83,11 @@ prevButton.addEventListener('click',()=>{
         counter= 6
         posts.style.transform = 'translateX(0px)';
     }
-    else if(carouselContainer.clientWidth === 320 && counter <= 0){
+    else if(carouselContainer.clientWidth === 330 && counter <= 0){
+        counter= 12
+        posts.style.transform = 'translateX(0px)';
+    }
+    else if(carouselContainer.clientWidth === 300 && counter <= 0){
         counter= 12
         posts.style.transform = 'translateX(0px)';
     }
