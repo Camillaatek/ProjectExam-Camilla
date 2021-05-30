@@ -115,11 +115,14 @@ const id = para.get("id")
 
 const api = `https://camillaatek.no/wp-json/wp/v2/posts/${id}?_embed=true`;
 const posts = document.querySelector(".blog");
+const modal = document.querySelector(".modal")
+const body = document.querySelector("body")
 
  fetch(api)
      .then(response => response.json())
      .then(data => universe(data))
      .catch(error => console.error(error))
+     
 
 const universe = (blog) => {
      console.log(blog);
@@ -130,11 +133,25 @@ const universe = (blog) => {
         <div class="info">
         <div class="top">
         <h2>${blog.title.rendered}</h2>
-        <img src="${image.source_url}" alt="yeet">
+        <img onClick="funk()" class= "buildfunk" src="${image.source_url}" alt="image">
         </div>
         <p>${blog.content.rendered}</p>
        </div>
        `;
        posts.innerHTML += postDiv;
+       modal.innerHTML = `<img class="img-click" src="${image.source_url}" alt="">`
        }
- }
+}
+
+const funk = ()=>{
+     const build = document.querySelector(".buildfunk");
+     modal.style.display = "flex";
+     body.classList.add("modalbuild");
+     document.documentElement.add = "0";
+}
+
+modal.addEventListener("click", ()=>{
+     modal.style.display = "none";
+     body.classList.remove("modalbuild")
+});
+

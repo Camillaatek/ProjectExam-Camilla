@@ -50,6 +50,7 @@ nav li {
 .body-container{
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 
 /* .contact-pic img {
@@ -62,8 +63,16 @@ nav li {
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(44, 44, 44, 0.2) 0px 8px 24px;
+    height: 600px;
+    
 }
-
+.contactpic img {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+}
 .contact-info {
     margin: 20px;
 }
@@ -73,6 +82,7 @@ h1 {
     background: -webkit-linear-gradient(120deg,#ff34c6, #3268c5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
 }
 .headline {
     display: flex;
@@ -86,27 +96,175 @@ h1 {
     height: 400px;
     
     border-radius: 20px;
-    margin: 50px auto;
+    margin: 50px 100px 0px 100px;
+   
 }
   
 form > div { 
-  
+  font-size: 17px;
   margin: 1px 10px 15px 10px; 
 }
 
-label { 
-  display: inline-block; width: 100px; text-align: right; 
+label{ 
+  display: inline-block; 
+  width: 100px; 
+  text-align: left; 
+  padding-right: 30px;
 }
+.submit > input  { 
+    display: inline-block; 
+    width: 100px; 
+    text-align: right; 
+    
 
-input[type=submit] {
-  margin-left: 105px;
-  font-family: 'Poppins', sans-serif;
-  border: none;
-  border-bottom: 1px;
+  
+    
+    /* border: none;
+    text-decoration: none;
+    
+    padding: 10px;
+    margin: auto;
+    background-image: linear-gradient(120deg, #00E5FF 0%, #4218B8 100%);
+    
+    color: white;
+    border-radius: 12px;
+    font-size: 20px; */
+  }
+form div {
+  
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
-
-/* @media (max-width: 1024px) {
-    .contact-forum {
-        width: 250px;
+ 
+@media (max-width: 768px){
+    .menucontainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        z-index: 2;
+        
     }
-} */
+    
+    .hamburger {
+        display: none;
+        
+    }
+    
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        /* -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; */
+        background-color: #101010;
+        background-color: rgb(0, 0, 0);
+    }
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-link {
+        /* margin-left: 5rem; */
+        color: black;
+        margin: 1rem;
+    }
+    
+    /* .nav-link{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #000000;
+    } */
+    
+    .nav-link:hover{
+        color: #482ff7;
+    }
+    
+    .nav-links {
+        position: absolute;
+        left: -100%;
+        top: 6rem;
+        
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 50vh;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .nav-links.active {
+        left: 0;
+        
+    }
+
+    .nav-link {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+        
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+
+
+    }
+}
+
+@media (max-width: 768px){
+    .body-container {
+        padding-top: 50px;
+    }
+    .contact-forum {
+        width: 350px;
+    }
+    #signup {
+    
+        width: 300px;
+        height: 400px;
+        
+        border-radius: 20px;
+       margin: auto;
+       
+    }
+    form div {
+  
+  
+        display: flex;
+        justify-content: center;
+    }
+
+    form > div { 
+        font-size: 17px;
+        margin: 1px 10px 15px 10px; 
+      }
+      
+      label{ 
+        display: inline-block; 
+        width: 100px; 
+        text-align: right; 
+        padding-right: 30px;
+      }
+}

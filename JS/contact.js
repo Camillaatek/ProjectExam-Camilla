@@ -4,13 +4,13 @@ form.addEventListener("submit", validateForm);
 const name = document.querySelector ("input#name");
 const subject = document.querySelector ("input#subject");
 const email = document.querySelector ("input#email");
-const address = document.querySelector ("input#address");
+const message = document.querySelector ("input#message");
 
 // const message = document.querySelector ("p#message");
 const nameMsg = document.querySelector ("span#nameMsg");
 const subjectMsg = document.querySelector ("span#subjectMsg");
 const emailMsg = document.querySelector ("span#emailMsg");
-const addressMsg = document.querySelector ("span#addressMsg");
+const messageMsg = document.querySelector ("span#messageMsg");
 
 function validateForm(e) {
   // Prevent the form from submitting when clicking the "Submit" button
@@ -20,8 +20,8 @@ function validateForm(e) {
   let submittedName = name.value.trim(); 
   console.log("Name: " + submittedName); 
   nameMsg.innerHTML = "";
-  if (submittedName.length < 2) {
-    nameMsg.innerHTML += "The name must be at least 2 characters long! "; 
+  if (submittedName.length < 5) {
+    nameMsg.innerHTML += "The name must be at least 5 characters long! "; 
   }  
   if (/\d/.test(submittedName)) { 
     nameMsg.innerHTML += "The name cannot contain any digits! ";
@@ -31,7 +31,7 @@ function validateForm(e) {
   console.log("Subject: " + submittedSubject); 
   subjectMsg.innerHTML = "";
   if (submittedSubject.length < 10) {
-    subjectMsg.innerHTML += "The name must be at least 10 characters long! "; 
+    subjectMsg.innerHTML += "please enter all 15 digits!"; 
   }  
 
   // Validate e-mail
@@ -44,19 +44,19 @@ function validateForm(e) {
   }
   
   //address
-  let submittedAddress = address.value.trim(); 
-  console.log("address: " + submittedAddress); 
-  addressMsg.innerHTML = "";
-  if (submittedAddress.length < 25) {
-    addressMsg.innerHTML += "The address must be at least 25 characters long! "; 
+  let submittedMessage = message.value.trim(); 
+  console.log("address: " + submittedMessage); 
+  messageMsg.innerHTML = "";
+  if (submittedMessage.length < 25) {
+    messageMsg.innerHTML += "The address must be at least 25 characters long! "; 
   }  
 
   // If all fields validate, the form may be submitted
-  if (nameMsg.innerHTML === "" && emailMsg.innerHTML === "" && addressMsg.innerHTML === "") {
-    console.log ("Form submitted");
+  if (nameMsg.innerHTML === "" && emailMsg.innerHTML === "" && messageMsg.innerHTML === "") {
+    console.log ("submitted");
     //form.submit();
   } else {
-    console.log ("Still validation errors");
+    console.log ("error");
   }  
   
 }
