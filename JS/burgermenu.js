@@ -9,10 +9,6 @@ function mobileMenu() {
     navLink.classList.toggle("active");
 }
 
-
-
-
-
 const navLi = document.querySelectorAll(".nav-li");
 
 navLi.forEach(n => n.addEventListener("click", closeMenu));

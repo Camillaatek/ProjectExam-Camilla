@@ -4,7 +4,6 @@
 }
 
 body {
-    /* background-image: linear-gradient(to top, #ffffff , #0079ca ); */
     margin: 0;
 }
 
@@ -60,12 +59,6 @@ background: -webkit-linear-gradient(120deg,#ff34c6, #3268c5);
     -webkit-text-fill-color: transparent;
 }
 
-/* .about-site {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 600px;
-} */
-
 .about-fact {
 max-width: 600px;
 margin: auto;
@@ -114,8 +107,6 @@ footer {
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        /* -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; */
         background-color: #101010;
         background-color: rgb(0, 0, 0);
     }
@@ -126,16 +117,9 @@ footer {
     }
     
     .nav-link {
-        /* margin-left: 5rem; */
         color: black;
         margin: 1rem;
     }
-    
-    /* .nav-link{
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: #000000;
-    } */
     
     .nav-link:hover{
         color: #482ff7;
