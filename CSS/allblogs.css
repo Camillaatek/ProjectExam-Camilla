@@ -149,7 +149,6 @@ footer {
 }
 
 
-
 @media (max-width: 1024px) {
     .allblogspic img {
         width: 450px;
@@ -375,7 +374,7 @@ footer {
         
         font-size: 35px;
         position: absolute;
-        bottom: 100px;
+        bottom: 70px;
         right: 95px;
         width: fit-content;
         
@@ -384,7 +383,7 @@ footer {
         
         font-size: 15px;
         position: absolute;
-        bottom: 10px;
+        bottom: -20px;
         right: 100px;
         width: fit-content;
         

@@ -200,9 +200,50 @@ footer {
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
 }
+@media (max-width: 2560px){
+    .space {
+        height: 1300px;
+    }
+    .front-page h1 {
+        font-size: 130px;
+        position: relative;
+        top: 100px;
+    }
+    .front-page p {
+        font-size: 40px;
+        position: relative;
+        top: 100px;
+    }
+}
+
+@media (max-width: 1440px){
+    .front-page h1 {
+        font-size: 100px;
+        position: relative;
+        top: 100px;
+    }
+    .front-page p {
+        font-size: 20px;
+        position: relative;
+        top: 100px;
+    }
+    .space{
+        width: 10px;
+        
+    }
+}
 
 @media (max-width: 1024px) {
-
+    .front-page h1 {
+        font-size: 80px;
+        position: relative;
+        top: 100px;
+    }
+    .front-page p {
+        font-size: 20px;
+        position: relative;
+        top: 100px;
+    }
     .planet1 img{
         position: absolute;
         right: 50px;
@@ -388,12 +429,20 @@ footer {
 }
 @media (max-width: 375px) {
     img {
-        width: 40px;
+        width: 50px;
     }
-    
-
+    .front-text h1 {
+        font-size: 40px;
+        
+    }
+    .planet1 img {
+        
+        position: absolute;
+        top: 50px;
+        
+    }
     .space {
-        height: 50px;
+        height: 100px;
     }
 
     .webcontainer {

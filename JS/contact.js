@@ -40,7 +40,7 @@ function validateForm(e) {
   emailMsg.innerHTML = ""; // Clear earlier messages    
   let emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (!emailPattern.test(submittedEmail)) {
-    emailMsg.innerHTML += "Please enter a valid email";
+    emailMsg.innerHTML += "Must be a valid email";
   }
   
   //address
@@ -48,7 +48,7 @@ function validateForm(e) {
   console.log("address: " + submittedMessage); 
   messageMsg.innerHTML = "";
   if (submittedMessage.length < 25) {
-    messageMsg.innerHTML += "The address must be at least 25 characters long! "; 
+    messageMsg.innerHTML += "Should be more than 25 characters long! "; 
   }  
 
   // If all fields validate, the form may be submitted
