@@ -5,7 +5,7 @@
 
 
 body {
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -36,7 +36,7 @@ nav li {
 .nav-link {
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     align-items: center;
     
 }
@@ -47,20 +47,21 @@ nav li {
     padding-top: 20px;
 }
 
-.body-container {
-    margin: 100px 400px 0px 400px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.body-container{
+  display: flex;
+  justify-content: center;
 }
 
-.contact-pic img {
+/* .contact-pic img {
     height: 704px;
     width: 550px;
-}
+} */
 
 .contact-forum {
-    
-    background-color: white;
+    width: fit-content;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(44, 44, 44, 0.2) 0px 8px 24px;
 }
 
 .contact-info {
@@ -69,6 +70,9 @@ nav li {
 
 h1 {
     font-size: 45px;
+    background: -webkit-linear-gradient(120deg,#ff34c6, #3268c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .headline {
     display: flex;
@@ -101,3 +105,8 @@ input[type=submit] {
   border-bottom: 1px;
 }
 
+/* @media (max-width: 1024px) {
+    .contact-forum {
+        width: 250px;
+    }
+} */
