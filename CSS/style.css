@@ -48,6 +48,7 @@ nav li {
     text-decoration: none;
     color: white;
     align-items: center;
+    font-family: 'Rubik', sans-serif;
     
 }
 
@@ -62,8 +63,8 @@ nav li {
 .front-text h1 {
 color: white;
 font-size: 100px;
-font-family: 'Antic Didone', serif;
-font-weight: 100;
+font-family: 'Rubik', sans-serif;
+
 display: flex;
 justify-content: center;
 margin: auto;
@@ -72,6 +73,8 @@ top: 100px;
 }
 
 .front-text p {
+font-family: 'Karla', sans-serif;
+
 color: white;
 display: flex;
 justify-content: center;
@@ -195,6 +198,7 @@ footer {
     justify-content: center;
     color: white;
     font-size: 20px;
+    font-family: 'Rubik', sans-serif;
 }
 
 @media (max-width: 1024px) {

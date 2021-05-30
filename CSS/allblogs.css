@@ -45,7 +45,7 @@ nav li {
     text-decoration: none;
     color: rgb(0, 0, 0);
     align-items: center;
-    
+    font-family: 'Rubik', sans-serif;
 }
 
 .nav-links {
@@ -65,11 +65,13 @@ nav li {
     left: 100px;
     top: 100px;
     font-size: 40px;
+    font-family: 'Rubik', sans-serif;
 }
 
 .allheadline p {
     font-size: 25px;
     margin: 80px 50px 0px 0px;
+    font-family: 'Karla', sans-serif;
 }
 
 .allblogspic img {
@@ -99,6 +101,7 @@ nav li {
 }
 
 .blog a {
+    font-family: 'Rubik', sans-serif;
     text-decoration: none;
     color: black;
     display: flex;
@@ -142,6 +145,7 @@ footer {
     justify-content: center;
     color: white;
     font-size: 20px;
+    font-family: 'Rubik', sans-serif;
 }
 
 
