@@ -128,6 +128,7 @@ const spacegif = document.querySelector(".lasterinn")
 const universe = (blog) => {
      console.log(blog);
      posts.innerHTML = "";
+     document.title  = `The Universe | ${blog.title.rendered}`
      let images = blog._embedded["wp:featuredmedia"]
      for (image of blog._embedded["wp:featuredmedia"]){
         postDiv = ` 
