@@ -104,7 +104,7 @@ footer {
     height: 50px;
     background-image: linear-gradient(120deg, #ff34c6 0%, #3268c5 100%);
     width: 100%;
-    
+    margin-top: 150px;
 }
 .footer-text {
     display: flex;
